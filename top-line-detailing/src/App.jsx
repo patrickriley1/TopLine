@@ -5,7 +5,7 @@ function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <div>
+    <div className="app">
       <h1>Top Line Detailing</h1>
       <p>Your one-stop solution for all your car detailing needs.</p>
     </div>
