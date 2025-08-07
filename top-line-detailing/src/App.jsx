@@ -1,5 +1,8 @@
 import { useState } from 'react'
 import './App.css'
+import { useNavigate as usenavigate } from 'react-router-dom'
+import ReactDOM from 'react-dom'
+
 
 function App() {
   const [count, setCount] = useState(0)
@@ -12,7 +15,7 @@ function App() {
           fontSize: '72px',
         }}>
           <span>Top Line</span>
-          <span style={{ color: '#FFD700' }}> Detailing</span>
+          <span style={{ color: '#E48FFF' }}> Detailing</span>
         </h1>
         <p style={{ color: 'white' }}>Indulge in the ultimate automotive treatment with our elite detailing services. We combine precision, passion, and premium products to transform every inch of your vehicle, delivering a showroom shine every time.
 
@@ -23,10 +26,15 @@ function App() {
             fontSize: '16px',
             borderRadius: '4px',
             border: 'none',
-            backgroundColor: '#FFD700',
+            backgroundColor: '#E48FFF',
             color: 'black',
             cursor: 'pointer',
             alignSelf: 'center',
+            fontSize: '24px',
+            fontWeight: 'bold',
+            boxShadow: '0 4px 8px #E48FFF',
+          }} onClick={() => {
+            usenavigate('/services');
           }}>
             Schedule a Service Today!
           </button>
@@ -34,7 +42,11 @@ function App() {
       </div>
 
     </main>
+
+  
   )
 }
+
+
 
 export default App
