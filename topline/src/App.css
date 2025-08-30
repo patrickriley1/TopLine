@@ -1,0 +1,13 @@
+.Header {
+  text-align: center;
+}
+
+.Header h1 {
+  font-size: 4rem;
+  color: var(--color2);
+}
+
+.Content {
+  padding-top: 30px;
+  text-align: center;
+}
