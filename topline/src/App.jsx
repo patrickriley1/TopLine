@@ -16,18 +16,24 @@ function App() {
       </div>
       <div className="Testimonials">
         <h2>See What Our Customers Are Saying!</h2>
-        <div className="flewrow">
+        <div className="flexrow">
           <div className="testimonialCard">
             <p>Carter did a wonderful job on my car! Would highly recommend!</p>
             <h2>- Patrick R.</h2>
           </div>
+          <div className="testimonialCard">
+            <p>Carter is so handsome!</p>
+            <h2>- Jackson R.</h2>
+          </div>
+          <div className="testimonialCard">
+            <p>Carter</p>
+
+          </div>
+
+
+
+
         </div>
-
-
-
-
-
-
       </div>
       <div className="Footer">
         <p>Questions? Contact us at <a href="mailto:toplinedetailing@gmail.com">toplinedetailing@gmail.com</a> or <a href="tel:+1234567890">+1 (234) 567-890</a></p>
