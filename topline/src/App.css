@@ -31,7 +31,9 @@
 }
 
 .Testimonials {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .Footer {
@@ -43,3 +45,15 @@
   color: var(--color3);
 }
 
+.testimonialCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 200px;
+  height: 200px;
+  background-color: var(--color2);
+  color: var(--color1);
+  border-radius: 10px;
+
+
+}
