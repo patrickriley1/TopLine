@@ -25,10 +25,6 @@ function App() {
             <p>Carter is so handsome!</p>
             <h2>- Jackson R.</h2>
           </div>
-          <div className="testimonialCard">
-            <p>I was satisfied with the service by the end, but I caught the detailer dry-humping my backseat. 7/10</p>
-            <h2>- Dominic M.</h2>
-          </div>
 
         </div>
       </div>
