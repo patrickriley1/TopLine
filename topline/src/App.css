@@ -12,7 +12,8 @@
   text-align: center;
 }
 
-.Content button {
+.bookNowButton {
+  display: inline-block;
   margin: 50px;
   width: 400px;
   height: 100px;
@@ -21,9 +22,12 @@
   color: var(--color1);
   border-radius: 10px;
   transition: 0.3s ease;
+  text-decoration: none;
+  border: 2px solid var(--color1);
+  box-shadow: 5px 5px var(--color1);
 }
 
-.Content button:hover {
+.bookNowButton:hover {
   background-color: var(--color1);
   color: var(--color2);
   cursor: pointer;

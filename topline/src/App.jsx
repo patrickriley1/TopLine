@@ -1,19 +1,32 @@
 import React from "react";
 import './App.css';
 import './index.css';
+import Book from './book.jsx';
+import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 
-function App() {
+function App () {
+  return (
+    <Router>
+        <div className="Title">
+          <h1>Topline Detailing</h1>
+        </div>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/book" element={<Book />} />
+      </Routes>
+    </Router>
+  )
+}
+
+function Home() {
   return (
     <main>
-      <div className="Header">
-        <h1>Top Line Detailing</h1>
-      </div>
       <div className="Content">
         <h3>Welcome to Top Line Detailing! We look forward to giving you a premium detailing experience.</h3>
-        <button >
           <p>Book a Detail Now!</p>
-        </button>
+        {/* Licensed and insured */}
       </div>
+      {/* top services - Ceramic Coating, Detailing */}
       <div className="Testimonials">
         <h2>See What Our Customers Are Saying!</h2>
         <div className="flexrow">
@@ -25,7 +38,6 @@ function App() {
             <p>Carter is so handsome!</p>
             <h2>- Jackson R.</h2>
           </div>
-
         </div>
       </div>
       <div className="Footer">
