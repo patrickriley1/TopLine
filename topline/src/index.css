@@ -9,4 +9,9 @@
   background-position: center;
 }
 
+@media (max-width: 768px) {
+  .flexrow {
+    flex-direction: column;
+  }
+}
 
