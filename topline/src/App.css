@@ -1,8 +1,8 @@
-.Header {
+.Title {
   text-align: center;
 }
 
-.Header h1 {
+.Title h1 {
   font-size: 4rem;
   color: var(--color2);
 }

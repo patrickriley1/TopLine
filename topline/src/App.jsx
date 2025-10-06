@@ -23,7 +23,7 @@ function Home() {
     <main>
       <div className="Content">
         <h3>Welcome to Top Line Detailing! We look forward to giving you a premium detailing experience.</h3>
-          <p>Book a Detail Now!</p>
+        <Link to="/book" className="bookNowButton"><p>Book a Detail Now!</p></Link>
         {/* Licensed and insured */}
       </div>
       {/* top services - Ceramic Coating, Detailing */}
