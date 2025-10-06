@@ -14,7 +14,7 @@
 
 .bookNowButton {
   display: inline-block;
-  margin: 50px;
+  margin: 50px auto;
   width: 400px;
   height: 100px;
   font-size: 2rem;
@@ -23,6 +23,7 @@
   border-radius: 10px;
   transition: 0.3s ease;
   text-decoration: none;
+  border: 2px solid var(--color2);
 }
 
 .bookNowButton:hover {
@@ -30,6 +31,7 @@
   color: var(--color2);
   cursor: pointer;
   transform: scale(1.05);
+  box-shadow: 5px 5px var(--color2);
 }
 
 .Testimonials {
@@ -37,10 +39,14 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: auto;
+  text-align: center;
 }
 
 .Footer {
   text-align: center;
+  padding: 20px ;
+  margin: auto;
 }
 
 .Footer a {
@@ -59,6 +65,13 @@
   text-align: center;
   border: 2px solid var(--color2);
   box-shadow: 5px 5px var(--color2);
+  transition: 0.3s ease;
+}
+
+.testimonialCard:hover {
+  transform: scale(1.05);
+  box-shadow: 8px 8px var(--color2);
+  cursor: pointer;
 }
 
 .flexrow {
