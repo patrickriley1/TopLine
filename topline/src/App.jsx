@@ -24,7 +24,12 @@ function Home() {
       <div className="Content">
         <h3>Welcome to Top Line Detailing! We look forward to giving you a premium detailing experience.</h3>
         <Link to="/book" className="bookNowButton"><p>Book a Detail Now!</p></Link>
-        {/* Licensed and insured */}
+      </div>
+      <div className="Licensed">
+        <h2>Licensed and Insured</h2>
+        <p>
+          At Top Line Detailing, we take your trust seriously. We are fully licensed and insured, ensuring that every service we provide meets industry standards and legal requirements. Our insurance coverage protects your vehicle throughout the detailing process, giving you complete peace of mind. You can rest assured that your car is in safe, professional hands from start to finish.
+        </p>
       </div>
       {/* top services - Ceramic Coating, Detailing */}
       <div className="Testimonials">

@@ -23,8 +23,6 @@
   border-radius: 10px;
   transition: 0.3s ease;
   text-decoration: none;
-  border: 2px solid var(--color1);
-  box-shadow: 5px 5px var(--color1);
 }
 
 .bookNowButton:hover {
@@ -67,4 +65,14 @@
   display: flex;
   flex-direction: row;
   gap: 80px;
+}
+
+.Licensed {
+  text-align: center;
+  width: 60%;
+  margin: 0 auto;
+}
+
+.Licensed h2 {
+  font-size: 40px;
 }
