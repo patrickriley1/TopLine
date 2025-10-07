@@ -1,6 +1,7 @@
 import React from "react";
 import './App.css';
 import './index.css';
+import './carousel.jsx';
 
 function App() {
   return (
@@ -15,13 +16,8 @@ function App() {
         </button>
       </div>
       <div className="Testimonials">
-        <h2>See What Our Customers Are Saying!</h2>
         <div className="flewrow">
-          <div className="testimonialCard">
-            <p>Carter did a wonderful job on my car! Would highly recommend!</p>
-            <h2>- Patrick R.</h2>
-          </div>
-          
+          <ReviewBelt/>
         </div>
 
 
