@@ -1,7 +1,7 @@
 import React from "react";
 import './App.css';
 import './index.css';
-import './carousel.jsx';
+import ReviewBelt from './carousel.jsx';
 
 function App() {
   return (

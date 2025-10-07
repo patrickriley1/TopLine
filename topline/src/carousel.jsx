@@ -139,16 +139,16 @@ const styles = {
     width: '500px',
     flexShrink: 0,
     minWidth: '500px',
-    paddingBottom: '20px'
+    paddingBottom: '10px'
   },
   cardInner: {
     backgroundColor: 'white',
     borderRadius: '12px',
-    padding: '32px',
+    padding: '16px',
     boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.1)',
     display: 'flex',
     flexDirection: 'column',
-    minHeight: '400px',
+    minHeight: '250px',
     overflow: 'visible'
   },
   stars: {
