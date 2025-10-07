@@ -1,6 +1,7 @@
 import React from "react";
 import './App.css';
 import './index.css';
+import ReviewBelt from './carousel.jsx';
 import Book from './book.jsx';
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 
@@ -34,14 +35,10 @@ function Home() {
       {/* top services - Ceramic Coating, Detailing */}
       <div className="Testimonials">
         <h2>See What Our Customers Are Saying!</h2>
-        <div className="flexrow">
+        <div className="flewrow">
           <div className="testimonialCard">
             <p>Carter did a wonderful job on my car! Would highly recommend!</p>
             <h2>- Patrick R.</h2>
-          </div>
-          <div className="testimonialCard">
-            <p>Carter is so handsome!</p>
-            <h2>- Jackson R.</h2>
           </div>
         </div>
       </div>
