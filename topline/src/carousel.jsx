@@ -140,7 +140,7 @@ const styles = {
     width: '400px',
     flexShrink: 0,
     minWidth: '400px',
-    border: '1px solid var(--color2)',
+    border: '2px solid var(--color2)',
     borderRadius: '12px',
     transition: '0.3s ease',
     marginBottom: '16px',

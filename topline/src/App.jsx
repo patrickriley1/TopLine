@@ -8,13 +8,16 @@ import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 function App () {
   return (
     <Router>
-        <div className="Title">
-          <h1>Topline Detailing</h1>
-        </div>
+      <div className="Title">
+        <h1>Topline Detailing</h1>
+      </div>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/book" element={<Book />} />
       </Routes>
+      <div className="Footer">
+        <p>Questions? Contact us at <a href="mailto:toplinedetailing@gmail.com">toplinedetailing@gmail.com</a> or <a href="tel:+1234567890">+1 (234) 567-890</a></p>
+      </div>
     </Router>
   )
 }
@@ -37,9 +40,6 @@ function Home() {
         <div className="flewrow">
           <ReviewBelt />
         </div>
-      </div>
-      <div className="Footer">
-        <p>Questions? Contact us at <a href="mailto:toplinedetailing@gmail.com">toplinedetailing@gmail.com</a> or <a href="tel:+1234567890">+1 (234) 567-890</a></p>
       </div>
     </main>
   )

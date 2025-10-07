@@ -9,11 +9,11 @@ function Book() {
                 <h2>Book a Detail Now!</h2>
                 <h3>Choose from our detailing packages:</h3>
             </div>
-            <div className="Packages">
+            <div className="flexrow">
                 <div className="PackageCard">
                     <h2>Basic Package</h2>
                     <ul>
-                        <li></li>
+                        <li>Exterior wash and wax</li>
                     </ul>
                 </div>
                 <div className="PackageCard">
@@ -22,6 +22,14 @@ function Book() {
                         <li>Exterior wash and wax</li>
                         <li>Interior vacuum and wipe down</li>
                     </ul>
+                </div>
+                <div className="PackageCard">
+                    <h2>Ceramic Coating</h2>
+                    <ul>
+                        <li>High-quality ceramic coating application</li>
+                        <li>Long-lasting protection and shine</li>
+                    </ul>
+
                 </div>
             </div>
 
