@@ -3,37 +3,37 @@ export default function ReviewBelt() {
   const reviews = [
     {
       id: 1,
-      name: "Emily Rodriguez",
+      name: "Jackson Read",
       rating: 5,
-      text: "This product exceeded all my expectations. The quality is outstanding and customer service was incredibly helpful throughout the process.",
-      location: "Austin, TX"
+      text: "Amazing work from Carter. I'd reccomend this to anyone.",
+      location: "Clearwater, FL"
     },
     {
       id: 2,
       name: "Michael Chen",
       rating: 5,
-      text: "I've been using this for three months now and it's completely transformed my daily routine. Highly recommend to anyone on the fence!",
-      location: "San Francisco, CA"
+      text: "My car hasn't looked like this since I drove it off the lot!",
+      location: "Ft Myers, FL"
     },
     {
       id: 3,
-      name: "Sarah Thompson",
-      rating: 4,
-      text: "Great product overall. Setup was easy and it works exactly as described. Only minor issue was shipping took a bit longer than expected.",
-      location: "Seattle, WA"
+      name: "Patrick Riley",
+      rating: 5,
+      text: "I love the look of my car, it feels like I bought a new one!",
+      location: "Estero, FL"
     },
     {
       id: 4,
-      name: "David Park",
+      name: "John Smith",
       rating: 5,
-      text: "Best purchase I've made this year. The attention to detail is remarkable and you can tell they really care about their customers.",
-      location: "Boston, MA"
+      text: "Fantastic work from this young man.",
+      location: "Miami, FL"
     },
     {
       id: 5,
-      name: "Jessica Martinez",
+      name: "Jane Smith",
       rating: 5,
-      text: "Absolutely love it! The design is sleek, functionality is perfect, and it arrived faster than promised. Will definitely buy again.",
+      text: "I can see my reflection on the exterior like its a mirror!",
       location: "Miami, FL"
     }
   ];
