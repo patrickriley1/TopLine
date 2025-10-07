@@ -115,7 +115,7 @@ export default function ReviewBelt() {
 const styles = {
   container: {
     width: '100%',
-    backgroundColor: '#F9FAFB',
+    backgroundColor: 'var(--color1)',
     padding: '64px 16px',
     overflow: 'hidden'
   },
