@@ -19,12 +19,6 @@ function App() {
         <div className="flewrow">
           <ReviewBelt/>
         </div>
-
-
-
-
-
-
       </div>
       <div className="Footer">
         <p>Questions? Contact us at <a href="mailto:toplinedetailing@gmail.com">toplinedetailing@gmail.com</a> or <a href="tel:+1234567890">+1 (234) 567-890</a></p>
