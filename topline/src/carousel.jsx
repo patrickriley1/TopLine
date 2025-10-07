@@ -85,7 +85,7 @@ export default function ReviewBelt() {
         <div className="animate-scroll" style={styles.scrollContainer}>
           {/* Render all reviews including duplicates */}
           {duplicatedReviews.map((review, index) => (
-            <div key={`${review.id}-${index}`} style={styles.reviewCard}>
+            <div key={`${review.id}-${index}`} style={styles.reviewCard} className="reviewCard">
               <div style={styles.cardInner}>
                 {/* Star rating */}
                 <div style={styles.stars}>
@@ -117,7 +117,8 @@ const styles = {
     width: '100%',
     backgroundColor: 'var(--color1)',
     padding: '64px 16px',
-    overflow: 'hidden'
+    overflow: 'hidden',
+    margin: '0 auto'
   },
   title: {
     fontSize: '30px',
@@ -136,10 +137,14 @@ const styles = {
     gap: '24px'
   },
   reviewCard: {
-    width: '500px',
+    width: '400px',
     flexShrink: 0,
-    minWidth: '500px',
-    paddingBottom: '10px'
+    minWidth: '400px',
+    border: '1px solid var(--color2)',
+    borderRadius: '12px',
+    transition: '0.3s ease',
+    marginBottom: '16px',
+    marginTop: '16px'
   },
   cardInner: {
     backgroundColor: 'white',

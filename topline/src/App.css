@@ -91,3 +91,9 @@
 .Licensed h2 {
   font-size: 40px;
 }
+
+.reviewCard:hover {
+  box-shadow: 4px 4px var(--color2);
+  transform: scale(1.05);
+}
+
