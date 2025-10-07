@@ -1,10 +1,28 @@
 import React from "react";
+import { Link } from 'react-router-dom';
 
 function Book() {
     return (
         <main>
-            <div>
+            <div className="Title">
+                <Link to="/" className="backButton"><p>Back</p></Link>
                 <h2>Book a Detail Now!</h2>
+                <h3>Choose from our detailing packages:</h3>
+            </div>
+            <div className="Packages">
+                <div className="PackageCard">
+                    <h2>Basic Package</h2>
+                    <ul>
+                        <li></li>
+                    </ul>
+                </div>
+                <div className="PackageCard">
+                    <h2>Premium Package</h2>
+                    <ul>
+                        <li>Exterior wash and wax</li>
+                        <li>Interior vacuum and wipe down</li>
+                    </ul>
+                </div>
             </div>
 
 

@@ -3,6 +3,7 @@
   --color2: #1C4987;
   --color3: #F862C1;
   --color4: #000000;
+  --color5: #FFFFFF;
   background-color: var(--color1);
   font-family: Arial, sans-serif;
   background-size: cover;

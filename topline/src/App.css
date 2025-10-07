@@ -7,6 +7,12 @@
   color: var(--color2);
 }
 
+.Title h2 {
+  font-size: 2rem;
+  color: var(--color4);
+  margin-top: 60px;
+}
+
 .Content {
   padding-top: 30px;
   text-align: center;
@@ -97,3 +103,52 @@
   transform: scale(1.05);
 }
 
+.backButton {
+  text-decoration: none;
+  color: var(--color4);
+  display: inline-block;
+  border: 2px solid var(--color2);
+  border-radius: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  position: absolute;
+  left: 50px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  transition: 0.3s ease;
+}
+
+.backButton p {
+  padding: 0px;
+  margin: 0px;
+}
+
+.backButton:hover {
+  transform: scale(1.05);
+  box-shadow: 1px 1px var(--color2);
+}
+
+.Packages {
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 0px;
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  justify-content: center;
+}
+
+.PackageCard {
+  display: inline-block;
+  border: 2px solid var(--color2);
+  border-radius: 10px;
+  width: 500px;
+  height: 600px;
+  background-color: var(--color5);
+}
+
+.PackageCard ul {
+  text-align: left;
+  margin-left: 60px;
+
+}
