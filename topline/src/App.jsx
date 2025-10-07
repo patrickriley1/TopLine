@@ -37,9 +37,7 @@ function Home() {
       </div>
       {/* top services - Ceramic Coating, Detailing */}
       <div className="Testimonials">
-        <div className="flewrow">
           <ReviewBelt />
-        </div>
       </div>
     </main>
   )

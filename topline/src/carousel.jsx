@@ -116,7 +116,6 @@ const styles = {
   container: {
     width: '100%',
     backgroundColor: 'var(--color1)',
-    padding: '64px 16px',
     overflow: 'hidden',
     margin: '0 auto'
   },
@@ -188,5 +187,9 @@ const styles = {
     fontSize: '14px',
     color: '#6B7280',
     margin: 0
+  },
+  viewport: {
+    width: '100vw',
+    overflow: 'hidden',
   }
 };

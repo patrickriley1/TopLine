@@ -40,16 +40,6 @@
   box-shadow: 5px 5px var(--color2);
 }
 
-.Testimonials {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  justify-content: center;
-  align-items: center;
-  margin: auto;
-  text-align: center;
-}
-
 .Footer {
   text-align: center;
   padding: 20px ;
@@ -143,6 +133,7 @@
   background-color: var(--color5);
   margin: auto;
   transition: 0.3s ease;
+  overflow: hidden;
 }
 
 .PackageCard:hover {
@@ -152,4 +143,8 @@
 
 .PackageCard ul {
   text-align: center;
+}
+
+.Testimonials {
+  overflow: hidden;
 }
