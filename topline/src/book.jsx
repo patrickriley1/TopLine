@@ -11,8 +11,9 @@ function Book() {
                 <hr />
             </header>
             <div className="BookSection">
+                <Link to="/" className="backButton"><p>Back</p></Link>
+
                 <div className="BookTitle">
-                    <Link to="/" className="backButton"><p>Back</p></Link>
                     <h2>Choose from one of our Services!</h2>
                 </div>
                 <div className="flexrow">
