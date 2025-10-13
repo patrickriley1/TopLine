@@ -10,7 +10,7 @@ export default function ReviewBelt() {
     },
     {
       id: 2,
-      name: "Dina Whittamore",
+      name: "Izael Rios",
       rating: 5,
       text: "Great detailing job my car looks new however my dash cam caught carter aggressively mewing at pedestrians",
       location: "Ft Myers, FL"
@@ -115,7 +115,7 @@ export default function ReviewBelt() {
 const styles = {
   container: {
     width: '100%',
-    backgroundColor: 'var(--color1)',
+    backgroundColor: '#e9eef2',
     overflow: 'hidden',
     margin: '0 auto'
   },

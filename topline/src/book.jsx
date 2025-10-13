@@ -3,7 +3,14 @@ import { Link } from 'react-router-dom';
 
 function Book() {
     return (
+
         <main>
+            <header className="Title">
+                <div className="spacer">
+                    <h1>Top Line Detailing</h1>
+                </div>
+                <hr />
+            </header>
             <div className="BookTitle">
                 <Link to="/" className="backButton"><p>Back</p></Link>
                 <h2>Choose from one of our Services!</h2>
