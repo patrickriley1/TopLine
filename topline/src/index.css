@@ -14,6 +14,10 @@
   .flexrow {
     flex-direction: column;
   }
+  .Title h1{
+    font-size: 2.5rem;
+  }
+
 }
 
 p {
