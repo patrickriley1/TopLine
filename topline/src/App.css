@@ -129,9 +129,9 @@
   border: 2px solid var(--color2);
   border-radius: 10px;
   width: 400px;
-  height: 500px;
+  height: 45vh;
   background-color: var(--color5);
-  margin: auto;
+  margin: 0 auto;
   transition: 0.3s ease;
   overflow: hidden;
 }
@@ -147,4 +147,11 @@
 
 .Testimonials {
   overflow: hidden;
+}
+
+.BookTitle {
+  text-align: center;
+  position: relative;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }

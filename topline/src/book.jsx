@@ -4,10 +4,9 @@ import { Link } from 'react-router-dom';
 function Book() {
     return (
         <main>
-            <div className="Title">
+            <div className="BookTitle">
                 <Link to="/" className="backButton"><p>Back</p></Link>
-                <h2>Book a Detail Now!</h2>
-                <h3>Choose from our detailing packages:</h3>
+                <h2>Choose from one of our Services!</h2>
             </div>
             <div className="flexrow">
                 <div className="PackageCard">

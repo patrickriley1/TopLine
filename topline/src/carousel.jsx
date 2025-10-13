@@ -10,9 +10,9 @@ export default function ReviewBelt() {
     },
     {
       id: 2,
-      name: "Michael Chen",
+      name: "Dina Whittamore",
       rating: 5,
-      text: "My car hasn't looked like this since I drove it off the lot!",
+      text: "Great detailing job my car looks new however my dash cam caught carter aggressively mewing at pedestrians",
       location: "Ft Myers, FL"
     },
     {
