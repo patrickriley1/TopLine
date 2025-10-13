@@ -17,7 +17,9 @@
   .Title h1{
     font-size: 2.5rem;
   }
-
+  .bookNowButton {
+    scale: 0.8;
+  }
 }
 
 p {

@@ -137,7 +137,7 @@
   border-radius: 10px;
   width: 400px;
   height: 45vh;
-  background-color: var(--color5);
+  background-color: var(--color1);
   margin: 0 auto;
   transition: 0.3s ease;
   overflow: hidden;
@@ -157,6 +157,12 @@
   position: relative;
   padding-top: 20px;
   padding-bottom: 20px;
+}
+
+.BookSection {
+  margin-top: 120px;
+  text-align: center;
+  padding-bottom: 50px;
 }
 
 .section {
