@@ -5,8 +5,7 @@ import ReviewBelt from './carousel.jsx';
 import Book from './book.jsx';
 import { Element, scrollSpy, Events, Link as ScrollLink } from 'react-scroll';
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
-import { Analytics } from "@vercel/analytics/next"
-
+import { Analytics } from "@vercel/analytics/react"
 function Home() {
   const [activeSection, setActiveSection] = useState("section1");
 
