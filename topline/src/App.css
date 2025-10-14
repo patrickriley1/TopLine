@@ -184,7 +184,7 @@
   display: flex;
   flex-direction: column;
   position: relative;
-  background-image: url('blackcar.jpg');
+  background-image: url('/assets/blackcar.jpg');
   background-size: cover;
   background-position: center;
 }
