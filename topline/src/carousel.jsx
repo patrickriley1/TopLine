@@ -58,7 +58,7 @@ export default function ReviewBelt() {
 
   return (
     <div style={styles.container}>
-      <h2 style={styles.title}>What Our Customers Say</h2>
+      <h2 style={styles.title}>See What Our Customers Are Saying!</h2>
       
       {/* CSS Animation */}
       <style>{`
@@ -115,7 +115,7 @@ export default function ReviewBelt() {
 const styles = {
   container: {
     width: '100%',
-    backgroundColor: '#e9eef2',
+    backgroundColor: 'var(--color5)',
     overflow: 'hidden',
     margin: '0 auto'
   },
@@ -124,7 +124,7 @@ const styles = {
     fontWeight: 'bold',
     textAlign: 'center',
     marginBottom: '48px',
-    color: '#111827'
+    color: 'var(--color1)'
   },
   viewport: {
     maxWidth: '1280px',

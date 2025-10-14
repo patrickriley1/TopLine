@@ -1,11 +1,11 @@
 :root{
   --color1: #ffffff;
-  --color2: #1C4987;
+  --color2: #008aca;
   --color3: #F862C1;
   --color4: #000000;
-  --color5: #303030;
-  background-color: var(--color1);
-  font-family: Arial, sans-serif;
+  --color5: #1a1a1a;
+  background-color: var(--color5);
+  font-family: 'Arial Bold', sans-serif;
   background-size: cover;
   background-position: center;
 }

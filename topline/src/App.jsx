@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import './App.css';
 import './index.css';
 import ReviewBelt from './carousel.jsx';
@@ -7,26 +7,44 @@ import { Element, scrollSpy, Events, Link as ScrollLink } from 'react-scroll';
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 
 function Home() {
+  const [activeSection, setActiveSection] = useState("section1");
+
   useEffect(() => {
     Events.scrollEvent.register('begin', () => {});
     Events.scrollEvent.register('end', () => {});
     scrollSpy.update();
+
+    // Listen for scroll spy updates
+    const handleSetActive = (to) => setActiveSection(to);
+    Events.scrollEvent.register('activate', handleSetActive);
+
+    // react-scroll provides a global event for link activation
+    window.addEventListener('activate', (e) => setActiveSection(e.detail));
+
+    return () => {
+      Events.scrollEvent.remove('begin');
+      Events.scrollEvent.remove('end');
+      Events.scrollEvent.remove('activate');
+      window.removeEventListener('activate', (e) => setActiveSection(e.detail));
+    };
   }, []);
+
 
   return (
     <div>
-      {/* Fixed header */}
+      {/*  old header
       <header className="Title">
         <div className="spacer">
           <h1>Top Line Detailing</h1>
         </div>
         <hr />
-      </header>
+      </header>*/}
 
       {/* Sections */}
       <Element name="section1" className="section section1">
+        <h1>Top Line Detailing</h1>
         <h4>
-          Welcome to Top Line Detailing! We look forward to giving you a premium detailing experience.
+          Car Detailing Done Right.
         </h4>
         <Link to="/book" className="bookNowButton">
           <p>Book a Detail Now!</p>
@@ -49,6 +67,11 @@ function Home() {
         <p>Email: info@toplinedetailing.com</p>
         <p>Phone: (123) 456-7890</p>
       </Element>
+      {(activeSection === 'section2' || activeSection === 'section3' || activeSection === 'section4') && (
+        <Link to="/book" className="smallBook">
+          <p>Book Now!</p>
+        </Link>
+      )}
 
       {/* Dot Navigation */}
       <div className="dot-nav">
