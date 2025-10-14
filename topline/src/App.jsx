@@ -5,6 +5,7 @@ import ReviewBelt from './carousel.jsx';
 import Book from './book.jsx';
 import { Element, scrollSpy, Events, Link as ScrollLink } from 'react-scroll';
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
+import { Analytics } from "@vercel/analytics/next"
 
 function Home() {
   const [activeSection, setActiveSection] = useState("section1");
@@ -87,6 +88,7 @@ function Home() {
           />
         ))}
       </div>
+      <Analytics />
     </div>
   );
 }
