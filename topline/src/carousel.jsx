@@ -115,7 +115,7 @@ export default function ReviewBelt() {
 const styles = {
   container: {
     width: '100%',
-    backgroundColor: 'var(--color5)',
+    backgroundColor: 'var(--color1)',
     overflow: 'hidden',
     margin: '0 auto'
   },
@@ -124,7 +124,7 @@ const styles = {
     fontWeight: 'bold',
     textAlign: 'center',
     marginBottom: '48px',
-    color: 'var(--color1)'
+    color: 'var(--color5)'
   },
   viewport: {
     maxWidth: '1280px',
