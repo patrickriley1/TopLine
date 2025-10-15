@@ -9,6 +9,7 @@ import { Analytics } from "@vercel/analytics/react"
 
 function App() {
   const [activeSection, setActiveSection] = useState("section1");
+  const [fading, setFading] = useState(false);
 
   useEffect(() => {
     Events.scrollEvent.register('begin', () => {});
@@ -16,6 +17,25 @@ function App() {
     scrollSpy.update();
 
   }, []);
+
+  const [activePackage, setActivePackage] = useState("Basic Package");
+
+  const packageDescriptions = {
+    "Basic Package": "Exterior wash and wax.",
+    "Premium Package": "Exterior wash and wax, Interior vacuum and cleaning, Engine bay cleaning, Wheel and tire cleaning, Headlight restoration, Clay bar treatment, Paint correction (if needed)",
+    "Ceramic Coating": "Premier ceramic coating to make the car shine like new."
+  };
+
+
+  {/*} This here is for smooth transistions between the packgagenav: */}
+  const handlePackageChange = pkg => {
+    if (pkg === activePackage) return;
+    setFading(true);
+    setTimeout(() => {
+      setActivePackage(pkg);
+      setFading(false);
+    }, 200);
+  };
 
   return (
     <div>
@@ -47,34 +67,56 @@ function App() {
         <div className="BookTitle">
           <h2>Choose from one of our Services!</h2>
         </div>
-        <div className="flexrow">
-          <div className="PackageCard">
-            <h2>Basic Package</h2>
-            <ul>
-              <li>Exterior wash and wax</li>
-            </ul>
+        <div className="packageView">
+          <div className="packageNav">
+            {["Basic Package", "Premium Package", "Ceramic Coating"].map((pkg) => (
+              <button
+                key={pkg}
+                className={`packageLabel ${activePackage === pkg ? "active": ""}`}
+                onClick={() => handlePackageChange(pkg)}
+              >
+                <h3 className="packageTitle">{pkg}</h3>
+              </button>
+            ))}
           </div>
-          <div className="PackageCard">
-            <h2>Premium Package</h2>
-            <ul>
-              <li>Exterior wash and wax</li>
-              <li>Interior vacuum and cleaning</li>
-              <li>Engine bay cleaning</li>
-              <li>Wheel and tire cleaning</li>
-              <li>Headlight restoration</li>
-              <li>Clay bar treatment</li>
-              <li>Paint correction (if needed)</li>
-            </ul>
-          </div>
-          <div className="PackageCard">
-            <h2>Ceramic Coating</h2>
-            <ul>
-              <li>High-quality ceramic coating application</li>
-              <li>Long-lasting protection and shine</li>
-            </ul>
-            <a href="tel:2392840586">Text or Call now to get a quote!</a>
+          <div className={`packageDescriptions ${fading ? "fade" : ""}`}>
+            <p>{packageDescriptions[activePackage]}</p>
+            <a href="tel:1234567890" className="callLink">Call or Text for a Free Quote!</a>
           </div>
         </div>
+
+        {/* Old code
+        
+        <div className="flexrow">
+          <div className="Packages">
+            <div className="PackageCard">
+              <h2>Basic Package</h2>
+              <ul>
+                <li>Exterior wash and wax</li>
+              </ul>
+            </div>
+            <div className="PackageCard">
+              <h2>Premium Package</h2>
+              <ul>
+                <li>Exterior wash and wax</li>
+                <li>Interior vacuum and cleaning</li>
+                <li>Engine bay cleaning</li>
+                <li>Wheel and tire cleaning</li>
+                <li>Headlight restoration</li>
+                <li>Clay bar treatment</li>
+                <li>Paint correction (if needed)</li>
+              </ul>
+            </div>
+            <div className="PackageCard">
+              <h2>Ceramic Coating</h2>
+              <ul>
+                <li>High-quality ceramic coating application</li>
+                <li>Long-lasting protection and shine</li>
+              </ul>
+            </div>
+
+          </div>
+        </div> */}
       </Element>
 
       <Element name="section3" className="section section3">

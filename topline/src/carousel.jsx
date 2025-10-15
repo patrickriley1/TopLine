@@ -24,9 +24,9 @@ export default function ReviewBelt() {
     },
     {
       id: 4,
-      name: "John Smith",
+      name: "Dominic Maraldo",
       rating: 5,
-      text: "Fantastic work from this young man.",
+      text: "Service was great but a caught the detailer dry-humping the back seat, 7/10.",
       location: "Miami, FL"
     },
     {
