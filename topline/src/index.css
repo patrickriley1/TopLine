@@ -22,14 +22,22 @@
     scale: 0.8;
   }
   .section2 h2 {
-    scale: 0.8;
-    margin-top: 0px;
+    scale: 0.7;
+    width: 100%;
+    margin-top: -30px;
   }
   .packageTitle {
     padding: 0;
   }
   .packageView {
     width: 90%;
+  }
+  .section1 h1 {
+    scale: 0.9;
+    width: 100%;
+  }
+  .section3 p {
+    width: 80%;
   }
 }
 
