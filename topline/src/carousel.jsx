@@ -1,3 +1,5 @@
+import './index.css';
+
 export default function ReviewBelt() {
   // Our fake review data
   const reviews = [
@@ -57,28 +59,10 @@ export default function ReviewBelt() {
   };
 
   return (
-    <div style={styles.container}>
+    <div style={styles.container} className='carouselDiv'>
       <h2 style={styles.title}>See What Our Customers Are Saying!</h2>
-      
-      {/* CSS Animation */}
-      <style>{`
-        @keyframes scroll {
-          0% {
-            transform: translateX(0);
-          }
-          100% {
-            transform: translateX(-33.333%);
-          }
-        }
-        
-        .animate-scroll {
-          animation: scroll 25s linear infinite;
-        }
-        
-        .animate-scroll:hover {
-          animation-play-state: paused;
-        }
-      `}</style>
+
+
       
       {/* Carousel viewport */}
       <div style={styles.viewport}>

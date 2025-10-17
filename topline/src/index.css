@@ -39,6 +39,54 @@
   .section3 p {
     width: 80%;
   }
+  .packageDescriptions {
+    margin-bottom: 20px;
+  }
+  .carouselDiv {
+    @keyframes scroll {
+      100% {
+        transform: translateX(-100%);
+      }
+    }
+  }
+}
+
+@media (min-width: 769px) {
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-33.333%);
+    }
+  }
+
+  .animate-scroll {
+    animation: scroll 25s linear infinite;
+  }
+
+  .animate-scroll:hover {
+    animation-play-state: paused;
+  }
+}
+
+@media (max-width: 769px) {
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-333.333%);
+    }
+  }
+
+  .animate-scroll {
+    animation: scroll 25s linear infinite;
+  }
+
+  .animate-scroll:hover {
+    animation-play-state: paused;
+  }
 }
 
 p {
@@ -51,3 +99,4 @@ html, body {
   width: 100%;
   overflow-x: hidden;
 }
+
