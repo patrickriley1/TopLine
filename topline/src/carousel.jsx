@@ -14,7 +14,7 @@ export default function ReviewBelt() {
       id: 2,
       name: "Izael Rios",
       rating: 5,
-      text: "Great detailing job my car looks new however my dash cam caught carter aggressively mewing at pedestrians",
+      text: "Great detailing job on my car!",
       location: "Ft Myers, FL"
     },
     {
@@ -28,7 +28,7 @@ export default function ReviewBelt() {
       id: 4,
       name: "Dominic Maraldo",
       rating: 5,
-      text: "Service was great but a caught the detailer dry-humping the back seat, 7/10.",
+      text: "Service was great!",
       location: "Miami, FL"
     },
     {
