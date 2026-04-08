@@ -5,7 +5,7 @@
   --color4: #000000;
   --color5: #1a1a1a;
   background-color: var(--color5);
-  font-family: 'Arial Bold', sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   background-size: cover;
   background-position: center;
 }

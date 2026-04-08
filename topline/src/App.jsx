@@ -18,11 +18,11 @@ function App() {
 
   }, []);
 
-  const [activePackage, setActivePackage] = useState("Basic Package");
+  const [activePackage, setActivePackage] = useState("Interior Packages");
 
   const packageDescriptions = {
-    "Basic Package": "Exterior wash and wax.",
-    "Premium Package": "Exterior wash and wax, Interior vacuum and cleaning, Engine bay cleaning, Wheel and tire cleaning, Headlight restoration, Clay bar treatment, Paint correction (if needed)",
+    "Interior Packages": "Exterior wash and wax.",
+    "Exterior Packages": "Exterior wash and wax, Interior vacuum and cleaning, Engine bay cleaning, Wheel and tire cleaning, Headlight restoration, Clay bar treatment, Paint correction (if needed)",
     "Ceramic Coating": "Premier ceramic coating to make the car shine like new."
   };
 
@@ -69,7 +69,7 @@ function App() {
         </div>
         <div className="packageView">
           <div className="packageNav">
-            {["Basic Package", "Premium Package", "Ceramic Coating"].map((pkg) => (
+            {["Interior Packages", "Exterior Packages", "Ceramic Coating"].map((pkg) => (
               <button
                 key={pkg}
                 className={`packageLabel ${activePackage === pkg ? "active": ""}`}
